@@ -1,0 +1,2 @@
+module TypeOfUserHelper
+end
