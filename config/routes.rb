@@ -3,8 +3,8 @@ Rails.application.routes.draw do
   
   resources :schedules
   resources :users
+  resources :admins
   
   root 'welcome#index'
-  
   
 end
