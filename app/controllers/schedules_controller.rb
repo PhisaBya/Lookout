@@ -32,7 +32,7 @@ class SchedulesController < ApplicationController
         redirect_to schedules_path
     end
     def index 
-        @schedule = Schedule.all
+        @schedules = Schedule.all
     end 
 end
 
