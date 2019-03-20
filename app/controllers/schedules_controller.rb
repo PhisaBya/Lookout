@@ -1,10 +1,11 @@
 class SchedulesController < ApplicationController
     def new
     end
-<<<<<<< HEAD
+   
     def show
         @schedule = Schedule.find(params[:id])
     end 
+   
     def create
         @schedule = Schedule.new(schedule_params)
         byebug
@@ -15,9 +16,11 @@ class SchedulesController < ApplicationController
         render 'new'
         end
     end
+    
     def edit
         @schedule = Schedule.find(params[:id])
     end
+    
     def update
         @schedule = Schedule.find(params[:id])
         if @schedule.update(schedule_params)
@@ -26,11 +29,13 @@ class SchedulesController < ApplicationController
             render 'edit'
         end
     end
+    
     def destroy
         @schedule = Schedule.find(params[:id])
         @schedule.destroy
         redirect_to schedules_path
     end
+    
     def index 
         @schedules = Schedule.all
     end 
@@ -41,6 +46,4 @@ private
        params.require(:schedule).permit(:title, :text)
     end
 
-=======
-end
->>>>>>> 78257e03c22f55dcbda46e6352f2edf5b68eb855
+
