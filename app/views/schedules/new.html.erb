@@ -1,7 +1,8 @@
-class SchedulesController < ApplicationController
-    def new
+<h1>Add New Schedule</h1>
+
+def new
+        @schedule = Schedule.new
     end
-<<<<<<< HEAD
     def show
         @schedule = Schedule.find(params[:id])
     end 
@@ -32,7 +33,7 @@ class SchedulesController < ApplicationController
         redirect_to schedules_path
     end
     def index 
-        @schedules = Schedule.all
+        @schedule = Schedule.all
     end 
 end
 
@@ -40,7 +41,3 @@ private
     def schedules_params
        params.require(:schedule).permit(:title, :text)
     end
-
-=======
-end
->>>>>>> 78257e03c22f55dcbda46e6352f2edf5b68eb855
