@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :schedules
   resources :users
   resources :admins
+  resources :usertypes
   
   root 'welcome#index'
   
