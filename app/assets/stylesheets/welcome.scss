@@ -13,8 +13,11 @@
   left: 0;
   bottom: 0;
   right: 0;
-   background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.5);
+  text-decoration: none;
 }
+
+
 
 .text-center {
     margin-top: 30px;
@@ -27,6 +30,7 @@
     background-color:  #f4511e;
     color: white;
     border-radius: 2px;
+    text-decoration: none;
 }
 
 .Button-edit span {
@@ -34,19 +38,23 @@
   display: inline-block;
   position: relative;
   transition: 0.5s;
+  text-decoration: none;
+  
 }
 
-.Button-edit span:after {
+.Button-edit  span:after {
   content: '\00bb';
   position: absolute;
   opacity: 0;
   top: 0;
   right: -20px;
   transition: 0.5s;
+ 
 }
 
-.Button-edit:hover span {
+.Button-edit:hover span  {
   padding-right: 25px;
+  text-decoration: none;
 }
 
 .Button-edit:hover span:after {
@@ -59,4 +67,14 @@
     margin-top: 150px;
     font-size: 100px;
     
+}
+
+.link_dec {
+    text-decoration: none;
+    color: white;
+}
+
+.link_dec:hover {
+    text-decoration: none;
+    color: white;
 }
