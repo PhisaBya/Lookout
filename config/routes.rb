@@ -1,10 +1,9 @@
 Rails.application.routes.draw do
   get 'welcome/index'
+  get 'welcome/login'
   
   resources :schedules
   resources :users
-  resources :admins
-  resources :usertypes
   
   root 'welcome#index'
   
