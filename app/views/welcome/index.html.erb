@@ -1,4 +1,5 @@
 <div class="container-fluid text-center">
+
    <div class="pic">
   <div class="backpic">
   </div>
@@ -6,6 +7,12 @@
 </div>
    <h1 id = "head">Lookout</h1>
    <h2>Work Scheduling Made Simple.</h2><br><br>
-   <button class = "Button-edit" type="Login"> <span><%= link_to"Login", login_path, class: "link_dec" %></span></button><br><br>
-   <button class = "Button-edit" type="Signup"><span>Sign-up</span></button>
-</div>
+   <% if current_user %>
+  Logged in as <%= current_user.email %>.
+  <button class = "Button-edit" type="Logout"> <span><%= link_to"Logout", logout_path, class: "link_dec" %></span></button><br><br>
+<% else %>
+  <button class = "Button-edit" type="Sign Up"> <span><%= link_to"Sign Up", signup_path, class: "link_dec" %></span></button><br><br>
+  <button class = "Button-edit" type="Login"> <span><%= link_to"Login", login_path, class: "link_dec" %></span></button><br><br>
+<% end %>
+<p id=”notice”><%= notice %></p>
+
