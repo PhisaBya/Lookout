@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
-  resources :images
+  
+  get 'dashboard/index'
   get 'welcome/index'
   
-  
-  
+  resources :images
   resources :schedules
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
@@ -11,6 +11,6 @@ Rails.application.routes.draw do
   get 'login', to: 'sessions#new', as: 'login'
   get 'logout', to: 'sessions#destroy', as: 'logout'
   
-  root 'images#index'
-  
+ # root 'images#index'
+  root 'welcome#index'
 end
