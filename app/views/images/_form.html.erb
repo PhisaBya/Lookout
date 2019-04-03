@@ -1,4 +1,9 @@
 <%= form_with(model: image, local: true) do |form| %>
+<div class="pic">
+  <div class="backpic">
+  </div>
+
+</div>
   <% if image.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(image.errors.count, "error") %> prohibited this image from being saved:</h2>
