@@ -72,9 +72,17 @@
 .link_dec {
     text-decoration: none;
     color: white;
+    
 }
 
-.link_dec:hover {
+.link_dec:hover  {
     text-decoration: none;
     color: white;
+    background-color:  #f4511e;
 }
+
+.link_dec:visited {
+    color: white;
+}
+
+

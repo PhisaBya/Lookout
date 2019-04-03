@@ -1,4 +1,4 @@
-// Place all the styles related to the Users controller here.
+// Place all the styles related to the sessions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 backpic {
@@ -16,6 +16,6 @@ backpic {
   background-color: rgba(0,0,0,0.5);
   text-decoration: none;
 }
-h1 {
-  color: rgb(235,79,45);
+.text-center {
+    margin-top: 30px;
 }
