@@ -1,11 +1,9 @@
 Rails.application.routes.draw do
-<<<<<<< HEAD
   resources :images
   get 'welcome/index'
   get 'welcome/login'
   
-=======
->>>>>>> 61a89dbffd61142c7eb29a4691ccd325e5db90e7
+
   
   get 'dashboard/index'
   get 'welcome/index'
