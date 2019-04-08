@@ -7,4 +7,14 @@ class ApplicationController < ActionController::Base
       @current_user = nil
     end
   end
+  
+  def authorize_admin
+    if session[:user_id]
+    redirect_back fallback_location: root_path, status: 401 unless current_user.admin
+    flash[:notice] = 'Only admins can view that page' unless current_user.admin
+    else 
+    redirect_back fallback_location: root_path, status: 401
+    flash[:notice] = "Unknown Error Occurred"
+    end 
+  end
 end
