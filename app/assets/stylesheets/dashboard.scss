@@ -2,7 +2,22 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-#margin {
-    margin-top: 40px;
-    clear: right;
+.margin {
+    margin-top: 50px;
+    margin-right: 150px;
+    clear: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
+.resize {
+    width:500px;
+    height:400px;
+    
 }
