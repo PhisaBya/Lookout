@@ -1,11 +1,50 @@
 <div class="container-fluid text-center">
 
-   <div class="pic">
+<div class="pic">
   <div class="backpic">
   </div>
 
-</div>
-<h1 id = "head">Lookout</h1>
+ <div>
+   
+   <div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+        <%= image_tag("caresel 3.jpg", :alt => "Happy people", class: "resize") %>
+      
+    </div>
+    <div class="carousel-item">
+      
+      <%= image_tag("carasel 1.jpg", :alt => "Happy people", class: "resize") %>
+    </div>
+    <div class="carousel-item">
+      
+      <%= image_tag("caresel 2.jpg", :alt => "Happy people", class: "resize") %>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+</div> <br>
+   <h1>Lookout</h1>
    <h2>Work Scheduling Made Simple.</h2><br><br>
-<button class = "Button-edit" type="Sign Up"> <span><%= link_to"Sign Up", signup_path, class: "link_dec" %></span></button><br><br>
-<button class = "Button-edit" type="Login"> <span><%= link_to"Login", login_path, class: "link_dec" %></span></button><br><br>
+       <button class = "Button-edit" type="Sign Up"> <span><%= link_to"Sign Up", signup_path, class: "link_dec" %></span></button><br><br>
+       <button class = "Button-edit" type="Login"> <span><%= link_to"Login", login_path, class: "link_dec" %></span></button><br><br>
+       
+   </div>
+
+</div>

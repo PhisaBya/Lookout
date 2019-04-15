@@ -10,12 +10,19 @@
   </head>
 
   <body>
+    <div class = "float-right">
+     <% if current_user %>
+         Logged in as <%= current_user.email %>. 
+         <button onclick="window.location.href='/logout'">Logout</button>
+        <% end %>
+    </div>
     <% if notice %>
-  <p class="alert alert-success"><%= notice %></p>
-<% end %>
-<% if alert %>
-  <p class="alert alert-danger"><%= alert %></p>
-<% end %>
+      <p class="alert alert-success"><%= notice %></p>
+    <% end %>
+    <% if alert %>
+      <p class="alert alert-danger"><%= alert %></p>
+    <% end %>
+
     <%= yield %>
   </body>
 </html>
