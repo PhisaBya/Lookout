@@ -10,14 +10,6 @@
   </div>
 </div>
 
-<div class = "float-right">
-
-<% if current_user %>
-  Logged in as <%= current_user.email %>. 
-  <button onclick="window.location.href='/logout'">Logout</button>
-   <% end %>
-   
-</div>
 
 <h1>Schedules</h1>
 
@@ -45,4 +37,5 @@
 
 <br>
 
-<%= link_to 'Add schedules', new_image_path %>
+<%= link_to 'Add schedules', new_image_path %><br>
+<%= link_to 'Home', welcome_index_path %>
