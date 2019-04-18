@@ -10,7 +10,11 @@ class ImagesController < ApplicationController
   # GET /images/1
   # GET /images/1.json
   def show
+<<<<<<< HEAD
      @images = Image.find(params[:id])
+=======
+    @image = Image.find(params[:id])
+>>>>>>> bf95b7eee5e7c82639ba6fb425a7a702d72e619b
   end
 
   # GET /images/new

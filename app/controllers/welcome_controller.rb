@@ -1,7 +1,7 @@
 class WelcomeController < ApplicationController
   def index
+    @images = Image.last(2)
   end
   
-  def dash
-  end
+  
 end
