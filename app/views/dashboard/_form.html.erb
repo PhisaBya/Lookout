@@ -11,16 +11,19 @@
      
         
       <div class="col-sm-6">
-        <h1>This weeks schedule</h1> <br>
+        <h1>This weeks schedule</h1> 
+        <% if @images[0]!=nil %>
+        <br>
         <%= image_tag(@images[0].img_url.to_s) %> <br>
+        <% end %>
         
         
         
         <% if current_user.admin %>
         
-         <br><br>
+        <br><br>
     
-         <button><span> <%=link_to'Upload Schedule', new_image_path %></span></button>
+        <button><span> <%=link_to'Upload Schedule', new_image_path %></span></button>
      
         <button><%= link_to 'Delete Image', @images[0], method: :delete, data: { confirm: 'Are you sure?' } %></button>
         <button><%= link_to 'Recent Schedules uploads', images_path %></button>
