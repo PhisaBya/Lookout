@@ -3,37 +3,48 @@
 
 <div class="margin" >
   <div class="row">
-    <div class="col-sm-6">
 
-         <%= image_tag("Lookoutsche.jpg", :alt => "Schedule", class: "img-fluid") %><br> 
+     <div class="col-sm-6">   
+     <%= image_tag("Lookoutsche.jpg", :alt => "Schedule", class: "resize") %>
+     </div>
      
      
-     <br><br>
-        <%# @images.each do |image| %>
-      <div>
-        <h1>This weeks schedule</h1>
         
-        <%##= image_tag @images[0].picture %> <br>
+      <div class="col-sm-6">
+        <h1>This weeks schedule</h1> <br>
+        <%= image_tag(@images[0].img_url.to_s) %> <br>
+        
         
         
         <% if current_user.admin %>
+        
+         <br><br>
     
          <button><span> <%=link_to'Upload Schedule', new_image_path %></span></button>
      
         <button><%= link_to 'Delete Image', @images[0], method: :delete, data: { confirm: 'Are you sure?' } %></button>
+        <button><%= link_to 'Recent Schedules uploads', images_path %></button>
+        
         <% end %>
         
        
       
-      </div>
+     
   
-     </li>
+     
     </div>
  </div>
 
   
   
-    <div class="col-sm-6">
+    <div class="row">
+        <div class="col-sm-6">
+            <%= image_tag("announcement.png", :alt => "announcment", class: "resize") %>
+        </div>
+        
+        <div class="col-sm-6">
+           <h1>Announcments</h1> 
+        </div>
         
                  
            

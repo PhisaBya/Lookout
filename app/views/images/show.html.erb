@@ -5,7 +5,14 @@
   <%= @image.title %>
 </p>
 
+<<<<<<< HEAD
 <%= image_tag @image.picture %>
+=======
+
+
+  <%= image_tag(@image.img_url.to_s) %>
+
+>>>>>>> 9d0821029c9aea94f835076700f1ff0bf109adf4
 
 <p>
   <strong>Caption:</strong>
@@ -13,4 +20,5 @@
 </p>
 
 <%= link_to 'Edit', edit_image_path(@image) %> |
-<%= link_to 'Back', images_path %>
+<%= link_to 'Back', welcome_index_path %>
+
