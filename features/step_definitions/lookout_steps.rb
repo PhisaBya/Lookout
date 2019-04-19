@@ -2,8 +2,8 @@ Given("I am on the Dashboard") do
   visit root_path
 end
 
-When("I click on the {string} link") do |new_image_path|
-  click_link new_image_path
+When("I click on the {string} link") do |page_name|
+  click_link page_name
 end
 
 Then("I should be on {string} page") do |images_path|

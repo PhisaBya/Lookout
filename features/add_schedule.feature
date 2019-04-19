@@ -1,4 +1,4 @@
-Feature: 
+Feature: Add schedule
   
   As a Admin
   So that Scheduling can be made easier
