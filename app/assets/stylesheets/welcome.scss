@@ -1,6 +1,8 @@
 // Place all the styles related to the Welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
 .backpic {
   position: absolute;
   z-index: -1;   
@@ -17,7 +19,22 @@
   text-decoration: none;
 }
 
+.footer {
+ 
+  padding: 10px;
+  text-align: center;
+  background-color: black;
+  
+}
 
+ .row-full{
+ width: 100vw;
+ position: relative;
+ margin-left: -50vw;
+ height: 100px;
+ margin-top: 100px;
+ left: 50%;
+}
 
 .text-center {
     margin-top: 30px;
@@ -69,6 +86,10 @@
     
 }
 
+#mar {
+    margin-top: 0px;
+}
+
 .link_dec {
     text-decoration: none;
     color: white;
@@ -102,4 +123,10 @@
 .row {
     border-bottom: 2px solid #d6d6c2;
     padding: 20px;
+    
 }
+
+.background {
+    background-color: #cdcdb1;
+}
+
