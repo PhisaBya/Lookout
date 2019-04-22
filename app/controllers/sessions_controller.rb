@@ -1,7 +1,7 @@
 class SessionsController < ApplicationController
   def new
     if check_login 
-      redirect_to '/'
+      redirect_to 'dashboards/form'
     end
   end
 

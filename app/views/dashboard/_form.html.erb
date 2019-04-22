@@ -27,8 +27,11 @@
      
         <button><%= link_to 'Delete Image', @images[0], method: :delete, data: { confirm: 'Are you sure?' } %></button>
         <button><%= link_to 'Recent Schedules uploads', images_path %></button>
+        <% else %>
+        <button><%= link_to 'View Schedules', images_path %></button>
         
         <% end %>
+        
         
        
       
@@ -46,8 +49,8 @@
         </div>
         
         <div class="col-sm-6">
-           <h1>Announcments</h1> 
-            <button><span> <%=link_to'Upload an announcement', announcements_path %></span></button>
+           <h1>Announcements</h1> 
+            <button><span> <%=link_to'Upload an announcement', new_announcement_path %></span></button>
         </div>
         
                  
