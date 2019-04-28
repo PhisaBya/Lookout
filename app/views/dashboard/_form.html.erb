@@ -32,12 +32,6 @@
         
         <% end %>
         
-        
-       
-      
-     
-  
-     
     </div>
  </div>
 
@@ -50,7 +44,21 @@
         
         <div class="col-sm-6">
            <h1>Announcements</h1> 
+           <% if @announcement[0]!=nil %>
+        <br>
+        <strong> <%= @announcement[0].title %></strong><br><br>
+        <div class="txt">
+           
+                 <%= @announcement[0].text %> <br>
+           <% end %>
+           
+        </div>
+           <br>
+            <% if current_user.admin %>
             <button><span> <%=link_to'Upload an announcement', new_announcement_path %></span></button>
+            <button><%= link_to 'Delete announcement', @announcement[0], method: :delete, data: { confirm: 'Are you sure?' } %></button>
+            
+            <% end %>
         </div>
         
                  
