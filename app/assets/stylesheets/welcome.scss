@@ -3,6 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
+
 .backpic {
   position: absolute;
   z-index: -1;   
@@ -127,6 +128,20 @@
 }
 
 .background {
-    background-color: #cdcdb1;
+    background-color: #999966;
+}
+
+.cen {
+    margin-top: 95px;
+}
+
+.bord {
+  border: 1px solid black;
+  border-radius: 6px;
+  padding: 60px 50px 25px 50px;
+  width: 500px;
+  height: 500px;
+  margin-left: 415px;
+  background-color: white;
 }
 

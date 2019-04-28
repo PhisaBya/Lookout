@@ -9,7 +9,7 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+  <body style="background-color:#ebebe0;">
     <div class = "float-right">
      <% if current_user %>
          Logged in as <%= current_user.email %>. 
@@ -25,4 +25,7 @@
 
     <%= yield %>
   </body>
+  <footer>
+    
+  </footer>
 </html>
