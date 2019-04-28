@@ -16,7 +16,8 @@
   <strong>Caption:</strong>
   <%= @image.caption %>
 </p>
-
+<% if current_user.admin %>
 <%= link_to 'Edit', edit_image_path(@image) %> |
+<%end%>
 <%= link_to 'Back', welcome_index_path %>
 

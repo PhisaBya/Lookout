@@ -1,14 +1,15 @@
-Feature:
+When("I click on the {string} link") do |string|
+  pending # Write code here that turns the phrase above into concrete actions
+end
 
-    A a Admin 
-    So that Scheduling can be made easier
-    I want to add a schedule
-    
-Scenario: As an Admin User I want to be able to edit an image of an existing schedule
-Given I am on the Dashboard
-When I click on the "Recent Schedule uploads" link
-Then I should be on "Schedules" page
-When I click on "Edit" link
-Then I should be on the "Editing Schedule"
-And I should see the "Title" field
-And I should see the "Text" field
+When("I click on {string} link") do |string|
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+Then("I should be on the {string}") do |string|
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+Then("I should see the {string} field") do |string|
+  pending # Write code here that turns the phrase above into concrete actions
+end

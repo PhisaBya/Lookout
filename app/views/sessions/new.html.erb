@@ -2,21 +2,22 @@
 <div class="container-fluid text-center">
 
    <div class="pic">
-  <div class="backpic">
+  
   </div>
-
-<h1>Login</h1>
+<div class="bord">
+<h1>Login</h1><br>
 <%= form_tag sessions_path do |form| %>
 
   <div class="field">
     <%= label_tag :email %>
     <%= text_field_tag :email %>
-  </div>
+  </div><br>
   <div class="field">
     <%= label_tag :password %>
     <%= password_field_tag :password %>
-  </div>
+  </div><br>
   <div class="actions">
     <%= submit_tag "Login" %>
   </div>
 <% end %>
+</div>
