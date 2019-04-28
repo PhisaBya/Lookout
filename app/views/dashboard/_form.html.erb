@@ -23,10 +23,10 @@
         
         <br><br>
     
-        <button><span> <%=link_to'Upload Schedule', new_image_path %></span></button>
+        <button><span> <%=link_to'Upload schedule', new_image_path %></span></button>
      
-        <button><%= link_to 'Delete Image', @images[0], method: :delete, data: { confirm: 'Are you sure?' } %></button>
-        <button><%= link_to 'Recent Schedules uploads', images_path %></button>
+        <button><%= link_to 'Delete image', @images[0], method: :delete, data: { confirm: 'Are you sure?' } %></button>
+        <button><%= link_to 'Recent schedules uploads', images_path %></button>
         <% else %>
         <button><%= link_to 'View Schedules', images_path %></button>
         
@@ -56,7 +56,7 @@
            <br>
             <% if current_user.admin %>
             <button><span> <%=link_to'Upload an announcement', new_announcement_path %></span></button>
-            <button><%= link_to 'Delete announcement', @announcement[0], method: :delete, data: { confirm: 'Are you sure?' } %></button>
+            <button><%= link_to 'Delete announcements', @announcement[0], method: :delete, data: { confirm: 'Are you sure?' } %></button>
             
             <% end %>
         </div>
