@@ -1,16 +1,16 @@
 <div class="container-fluid text-center">
-    <h2 class = "float-left"> My Dashboard </h2>
+   <h2 class = "float-left"> My Dashboard </h2>
 
 <div class="margin" >
   <div class="row">
 
-     <div class="col-sm-6">   
-     <%= image_tag("Lookoutsche.jpg", :alt => "Schedule", class: "resize") %>
+     <div class="col-sm-4">   
+     <%= image_tag("Lookoutsche.jpg", :alt => "Schedule", class: "resize3") %>
      </div>
      
      
         
-      <div class="col-sm-6">
+      <div class="col-sm-8">
         <h1>This weeks schedule</h1> 
         <% if @images[0]!=nil %>
         <br>
@@ -23,12 +23,13 @@
         
         <br><br>
     
-        <button><span> <%=link_to'Upload schedule', new_image_path %></span></button>
+        <button class="button_dec"><span> <%=link_to'Upload Schedule', new_image_path, class: "button_dec"%></span></button>
      
-        <button><%= link_to 'Delete image', @images[0], method: :delete, data: { confirm: 'Are you sure?' } %></button>
-        <button><%= link_to 'Recent schedules uploads', images_path %></button>
+        <button class="button_dec"><%= link_to 'Delete Schedule', @images[0], method: :delete, data: { confirm: 'Are you sure?' }, class: "button_dec"%></button>
+        <button class="button_dec"><%= link_to 'Previous Schedules', images_path, class:"button_dec" %></button>
         <% else %>
-        <button><%= link_to 'View Schedules', images_path %></button>
+        <br>
+        <button><%= link_to 'Previous Schedules', images_path %></button>
         
         <% end %>
         
@@ -38,11 +39,11 @@
   
   
     <div class="row">
-        <div class="col-sm-6">
-            <%= image_tag("announcement.png", :alt => "announcment", class: "resize") %>
+        <div class="col-sm-4">
+            <%= image_tag("announcement.png", :alt => "announcment", class: "resize2") %>
         </div>
         
-        <div class="col-sm-6">
+        <div class="col-sm-8">
            <h1>Announcements</h1> 
            <% if @announcement[0]!=nil %>
         <br>
@@ -55,8 +56,8 @@
         </div>
            <br>
             <% if current_user.admin %>
-            <button><span> <%=link_to'Upload an announcement', new_announcement_path %></span></button>
-            <button><%= link_to 'Delete announcements', @announcement[0], method: :delete, data: { confirm: 'Are you sure?' } %></button>
+            <button class="button_dec"><span> <%=link_to'Post Announcement', new_announcement_path, class:"button_dec" %></span></button>
+            <button class="button_dec"><%= link_to 'Delete Announcement', @announcement[0], method: :delete, data: { confirm: 'Are you sure?' }, class:"button_dec" %></button>
             
             <% end %>
         </div>

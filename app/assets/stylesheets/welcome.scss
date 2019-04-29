@@ -97,6 +97,7 @@
     
 }
 
+
 .link_dec:hover  {
     text-decoration: none;
     color: white;
@@ -107,6 +108,20 @@
     color: white;
 }
 
+.button_dec {
+    text-decoration: none;
+    color: white;
+    background-color: #f4511e;
+    border-radius: 7px;
+    width: 200px;
+    height: 50px;
+}
+
+.button_dec:hover {
+    text-decoration: none;
+    color: white;
+    background-color:  #ff9933;
+}
 
 .float-right {
     float: right;
@@ -115,11 +130,21 @@
 .resize {
     width: 60%;
     height: 300px;
-    
-    
-   
-    
 }
+.resize2 {
+     width: 65%;
+    height: 250px;
+    margin-top: 25px;
+}
+
+.resize3 {
+     width: 65%;
+    height: 250px;
+    margin-top: 25px;
+    border-radius: 125px;
+}
+
+
 
 .row {
     border-bottom: 2px solid #d6d6c2;
@@ -148,6 +173,10 @@
 .txt {
     border: 1px solid #97938a;
     border-radius: 7px;
+    
+}
+
+.dash_txt {
     
 }
 
