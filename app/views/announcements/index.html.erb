@@ -1,23 +1,33 @@
-<h1>Listing announcement</h1>
-<%= link_to 'New announcement', new_announcement_path %>
-<table>
+<div class="container-fluid text-center">
+<h1 class="shift">Announcement List</h1>
+<%= link_to 'New announcement', new_announcement_path %><br><br>
+<table class="shifts">
   <tr>
     <th>Title</th>
     <th>Text</th>
   </tr>
- 
+     
   <% @announcement.each do |announcement| %>
     <tr>
       <td><%= announcement.title %></td>
+      
       <td><%= announcement.text %></td>
-      <td><%= link_to 'Show', announcement_path(announcement) %></td>
-       <% if current_user.admin %>
-      <td><%= link_to 'Edit', edit_announcement_path(announcement) %></td>
-      <td><%= link_to 'Destroy',
+      
+      
+      <td><button><%= link_to 'Show', announcement_path(announcement) %></button><br></td>
+       
+      <% if current_user.admin %>
+      
+      <td><button><%= link_to 'Edit', edit_announcement_path(announcement) %></button></td>
+      <td><button><%= link_to 'Delete',
       announcement_path(announcement),
       method: :delete,
-      data: { confirm: 'Are you sure?' } %></td>
+      data: { confirm: 'Are you sure?' } %></button></td>
       <%end%>
     </tr>
   <% end %>
 </table>
+
+<br>
+<button><%= link_to 'Dashboard', welcome_index_path %></button>
+</div>
